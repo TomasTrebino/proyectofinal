@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid black; 
+    justify-content:space-evenly; 
+    align-items: center;
+    align-content: center;
+ 
+    button{
+    height: 35px;
+    width: 70px;
+   position: relative;
+   float: left;
+}
+
+}
+
+.header-menu{
+
+ li{ display: inline-block;
+ margin: 1rem 2rem;
+
+
+a {
+    font-family: $tipo-letra;
+    color: $color-dorado;
+    font-size: 20px;
+    text-decoration: none;
+
+
+&:hover {
+  color:#ffff;
+  background-color: rgb(127, 139, 107);
+     }
+   }
+ }
+}
+  
+
+
