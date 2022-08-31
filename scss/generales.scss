@@ -48,43 +48,6 @@ body {
   height: 150px;
   }
 
- /* tablas productos */
-
-  table {
-    border: solid darkolivegreen;
-  
-   th {
-    width: 25%;
-    border: 1px solid #000;
-     border-collapse: collapse;
-     padding: 0.3em;
-     font-family:$tipo-letra ;
-     background-color: rgb(216, 216, 216); opacity: 0.8;
-    }
-
-  }
-
-   td{
-    width: 25%;
-    border: 1px solid #000;
-     border-collapse: collapse;
-     padding: 0.3em;
-     background-color: rgb(216, 216, 216); opacity: 0.8;
-   }
-  
-  
-    table td ul li {
-    list-style: none;
-    list-style-type: none;
-    font-family: $tipo-letra ;
-    }
-
-   table td ol li {
-    list-style-type: none;
-    font-family:$tipo-letra ; 
-   }
-
-
   .enviar {
     width: 10%;
     height: 5%;
@@ -116,40 +79,30 @@ body {
     width: 90%;
   
   }
-  
-  .img-cargo {
-    height: 70%;
-    width: 40%;
-    border: solid $color-borde;
-    transition: all 1s;
-  
-  &:hover {
-    transform: scale(1.2,1.2);
-  }
-}
-  
-  .img-camisa { 
-    height: 70%;
-    width: 40%;
-    border: solid  $color-borde;
-    transition: all 1s;
 
-  
-  &:hover {
-    transform: scale(1.2,1.2);
-  }
-}
-  
-  .img-campo{
-  height: 70%;
-  width: 40%;
-  border: solid  $color-borde;
-  transition: all 1s;
+  .card {
+    width: 50%;
+    height: 65%;
+    align-items: center;
+    border: solid black;
+
+     .card-img-top {
+       height: 60%;
+        width: 90%; 
+     }
+   }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-dorado;
+    font-family: $tipo-letra;
+    color: white;
    
-  &:hover {
-    transform: scale(1.2,1.2);
   }
-}
+ 
   
   .accesorios-video {
     display: flex;
@@ -175,17 +128,18 @@ body {
   .stgroup {
     display: grid;
   }
-  
+
+    
   .nuestros-trabajos {
     padding: 20px;
   }
 
   
   .personalizar {
-    height: 40%;
+    height: 60%;
     width: 80%;
     padding-top: 20px;
-    padding-left: 300px;
+    padding-left: 400px;  
   }
 
   

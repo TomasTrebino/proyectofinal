@@ -38,35 +38,6 @@ body {
   width: 200px;
   height: 150px; }
 
-/* tablas productos */
-table {
-  border: solid darkolivegreen; }
-  table th {
-    width: 25%;
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 0.3em;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    background-color: #d8d8d8;
-    opacity: 0.8; }
-
-td {
-  width: 25%;
-  border: 1px solid #000;
-  border-collapse: collapse;
-  padding: 0.3em;
-  background-color: #d8d8d8;
-  opacity: 0.8; }
-
-table td ul li {
-  list-style: none;
-  list-style-type: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
-
-table td ol li {
-  list-style-type: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
-
 .enviar {
   width: 10%;
   height: 5%; }
@@ -90,29 +61,23 @@ h3 {
   height: 70%;
   width: 90%; }
 
-.img-cargo {
-  height: 70%;
-  width: 40%;
-  border: solid #505050;
-  transition: all 1s; }
-  .img-cargo:hover {
-    transform: scale(1.2, 1.2); }
+.card {
+  width: 50%;
+  height: 65%;
+  align-items: center;
+  border: solid black; }
+  .card .card-img-top {
+    height: 60%;
+    width: 90%; }
 
-.img-camisa {
-  height: 70%;
-  width: 40%;
-  border: solid #505050;
-  transition: all 1s; }
-  .img-camisa:hover {
-    transform: scale(1.2, 1.2); }
-
-.img-campo {
-  height: 70%;
-  width: 40%;
-  border: solid #505050;
-  transition: all 1s; }
-  .img-campo:hover {
-    transform: scale(1.2, 1.2); }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8d620c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: white; }
 
 .accesorios-video {
   display: flex;
@@ -137,10 +102,10 @@ h3 {
   padding: 20px; }
 
 .personalizar {
-  height: 40%;
+  height: 60%;
   width: 80%;
   padding-top: 20px;
-  padding-left: 300px; }
+  padding-left: 400px; }
 
 /*formulario*/
 form {
@@ -165,11 +130,11 @@ form {
     align-items: center;
     gap: 3rem; }
   #grilla-productos {
-    height: 1200px;
+    height: 1000px;
     width: 100%;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 30% 30% 30%;
-    grid-template-areas: "img-cargo" "tabla-cargo" "img-campo" "tabla-campo"  "img-camisa" "tabla-camisa";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 80%;
+    grid-template-areas: "img-cargo" "img-campo" "img-camisa";
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -223,10 +188,12 @@ h2 {
 
 h1 {
   color: white;
+  height: 70px;
   text-align: center;
+  align-items: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 40px;
+  padding: 8px;
   background-color: #8d620c; }
 
 #grilla {
@@ -251,13 +218,17 @@ h1 {
     justify-content: space-evenly;
     align-items: center; }
   #grilla-productos {
-    height: 1500px;
+    height: 2000px;
     grid-template-columns: 80%;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
-    grid-template-areas: "img-cargo"  "tabla-cargo" "img-campo"  "tabla-campo"  "img-camisa"  "tabla-camisa";
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: "img-cargo"  "img-campo" "img-camisa";
     justify-content: space-evenly;
     justify-items: center;
-    gap: 3rem;
+    gap: 1rem;
+    align-items: center; }
+  .card {
+    width: 60%;
+    height: 90%;
     align-items: center; }
   footer {
     height: 200px;
@@ -290,7 +261,7 @@ h1 {
     height: 100%; }
   .st2 {
     height: 50%;
-    width: 100%; }
+    width: 60%; }
   .enviar {
     width: 25%;
     height: 2%; }
